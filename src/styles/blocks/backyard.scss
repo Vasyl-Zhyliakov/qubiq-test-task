@@ -1,0 +1,217 @@
+.backyard {
+  &__title {
+    font-family: Archivo, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 110%;
+    color: $nav-button-background-2;
+    margin-bottom: 39px;
+
+    @include tablet {
+      font-size: 42px;
+      margin-bottom: 36px;
+    }
+
+    @include desktop {
+      margin-bottom: 19px;
+    }
+
+    @include large {
+      font-size: 48px;
+    }
+  }
+
+  &__media {
+    position: relative;
+    height: calc(179px - 19px);
+    width: 100%;
+
+    @include tablet {
+      height: calc(245px - 29px);
+      width: 245px;
+      order: 1;
+      flex-shrink: 0;
+    }
+
+    @include desktop {
+      height: calc(179px - 19px);
+      width: 100%;
+      order: 0;
+    }
+  }
+
+  &__video {
+    height: 179px;
+    width: 179px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+
+    @include tablet {
+      height: 245px;
+      width: 245px;
+      top: -29px;
+    }
+
+    @include desktop {
+      height: 179px;
+      width: 179px;
+      top: 0;
+    }
+  }
+
+  &__content {
+    z-index: 2;
+  }
+
+  &__item {
+    @include tablet {
+      display: flex !important;
+      gap: 53px;
+    }
+
+    @include desktop {
+      display: block !important;
+      gap: 0;
+      height: fit-content !important;
+    }
+  }
+
+  &__subtitle-wrapper {
+    padding: 12px 0px 12px 13px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $slide-subtitle-background;
+    backdrop-filter: blur(4px);
+    border-radius: 45px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 34px;
+    align-items: center;
+  }
+
+  &__number {
+    font-family: Archivo, sans-serif;
+    font-weight: 600;
+    font-size: 15.4px;
+    line-height: 140%;
+    letter-spacing: 2%;
+    color: $nav-button-color-2;
+    background-color: $slide-number-background;
+    backdrop-filter: blur(15.766668319702148px);
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  &__description-wrapper {
+    padding: 30px 33px 29px 32px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $slide-subtitle-background;
+    backdrop-filter: blur(4px);
+    border-radius: 31px;
+    margin-bottom: 21px;
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+
+    &--1 {
+      @include tablet {
+        padding-right: 100px;
+      }
+
+      @include desktop {
+        padding-right: 20px;
+      }
+    }
+
+    &--2 {
+      @include tablet {
+        padding-right: 100px;
+      }
+
+      @include desktop {
+        padding-right: 30px;
+      }
+    }
+
+    &--3 {
+      @include tablet {
+        padding-right: 120px;
+      }
+
+      @include desktop {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__description-title {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: $slide-number-background;
+    margin-bottom: 11px;
+
+    @include large {
+      font-size: 20px;
+    }
+  }
+
+  &__description {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    @include large {
+      font-size: 16px;
+    }
+
+    @include desktop {
+      &--3 {
+        padding-right: 80px;
+      }
+    }
+  }
+
+  &__pagination {
+    position: static !important;
+    padding-left: 31px;
+    text-align: start !important;
+    display: flex;
+    gap: 6px;
+
+    @include desktop {
+      display: none !important;
+    }
+
+    & .swiper-pagination-bullet {
+      background-color: $slide-number-background;
+      width: 28px;
+      height: 4px;
+      border-radius: 148px;
+    }
+
+    & .swiper-pagination-bullet-active {
+      background-color: $slider-bullet-active;
+    }
+  }
+
+  &__swiper-wrapper {
+    @include desktop {
+      height: 393px !important;
+      align-items: end !important;
+    }
+  }
+}

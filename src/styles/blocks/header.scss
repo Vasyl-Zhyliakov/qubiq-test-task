@@ -1,0 +1,204 @@
+.header {
+  padding-top: 16px;
+
+  margin-bottom: 67px;
+
+  @include tablet {
+    padding-top: 20px;
+    margin-bottom: 118px;
+  }
+
+  @include desktop {
+    margin-bottom: 172px;
+  }
+
+  @include large {
+    padding-top: 34px;
+    margin-bottom: 131px;
+  }
+
+  &__title-mobile {
+    font-family: Archivo, sans-serif;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 110%;
+    margin-bottom: 14px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__title-mobile-span {
+    display: inline-block;
+    width: fit-content;
+  }
+
+  &__logo-mobile {
+    float: right;
+    height: 60px;
+    width: 60px;
+    margin-left: 7px;
+    margin-top: 4px;
+  }
+
+  &__title-tablet {
+    display: block;
+    font-family: Archivo, sans-serif;
+    font-weight: 600;
+    line-height: 110%;
+    font-size: 48px;
+
+    @include desktop {
+      font-size: 72px;
+    }
+
+    @include large {
+      font-size: 90px;
+    }
+  }
+
+  &__logo-tablet {
+    height: 152px;
+    width: 152px;
+    min-width: 152px;
+
+    @include desktop {
+      height: 212px;
+      width: 212px;
+      min-width: 212px;
+    }
+
+    @include large {
+      height: 276px;
+      width: 276px;
+    }
+  }
+
+  &__title-wrapper {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      gap: 22px;
+      margin-bottom: 16px;
+    }
+
+    @include desktop {
+      gap: 138px;
+    }
+
+    @include large {
+      gap: 92px;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: $gray-55;
+    margin-bottom: 38px;
+
+    @include tablet {
+      font-size: 16px;
+      margin-bottom: 33px;
+    }
+
+    @include desktop {
+      font-size: 20px;
+      margin-bottom: 70px;
+    }
+
+    @include large {
+      font-size: 24px;
+      margin-bottom: 82px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 8px;
+
+    @include tablet {
+      gap: 21px;
+    }
+  }
+
+  &__button-left {
+    padding: 17px 30px;
+    background-color: $button-black-background-1;
+    backdrop-filter: blur(4px);
+    border-radius: 38px;
+    text-decoration: none;
+    font-family: Archivo, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 2%;
+    color: $button-black-text-1;
+    transition: all ease 0.3s;
+
+    @include tablet {
+      padding: 17px 117px 17px 107px;
+    }
+
+    &:hover {
+      background-color: $button-black-background-2;
+      color: $button-black-text-2;
+    }
+
+    &:active {
+      background-color: $button-black-background-3;
+      color: $button-black-text-3;
+    }
+  }
+
+  &__button-right {
+    padding: 17px 18px;
+    font-family: Archivo, sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 2%;
+    text-decoration: none;
+    border-radius: 38px;
+    backdrop-filter: blur(4px);
+    background-color: $button-white-background-1;
+    color: $button-white-text-1;
+    transition: all ease 0.3s;
+
+    &:hover {
+      background-color: $button-white-background-2;
+      color: $button-white-text-2;
+    }
+
+    &:active {
+      background-color: $button-white-background-3;
+      color: $button-white-text-3;
+    }
+
+    &--mobile {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      display: none;
+
+      @include tablet {
+        display: block;
+        padding-inline: 62px;
+      }
+    }
+  }
+
+  &__button-image {
+    width: 11px;
+    height: 10px;
+  }
+}

@@ -1,0 +1,47 @@
+@import 'mixins';
+
+$gray-95: #333333f2;
+$gray-55: #2626268c;
+$gray-45: #dedee373;
+$gray: #f6f7f8;
+$main-background: #f0f0f1;
+
+$button-black-background-1: #2d2d2d;
+$button-black-background-2: #3b3b3b;
+$button-black-background-3: $button-black-background-1;
+$button-black-text-1: #f7f7f7;
+$button-black-text-2: #d1d1d2;
+$button-black-text-3: #595959;
+
+$button-white-background-1: #e6e8ec;
+$button-white-background-2: #f8fbff;
+$button-white-background-3: #abacaf;
+$button-white-text-1: #2e2e2e;
+$button-white-text-2: #2e2e2ebf;
+$button-white-text-3: $button-white-text-1;
+
+$nav-background: #f2f3f5;
+$nav-border: #e1e1e275;
+$nav-button-color-1: #aeb0b1;
+$nav-button-color-2: #fbfbfc;
+$nav-button-color-3: #fbfbfcc7;
+$nav-button-background-2: #303030;
+$nav-button-background-3: #3b3b3b;
+
+$connect-icon-back: #9191915c;
+
+$logo-background-black: #ececf04d;
+
+$menu-main-background: #201f20;
+$menu-links-background: #e8e9ed;
+$menu-links-border: #e4e4e9;
+$menu-links-color: #7a7a7a;
+$menu-links-color-hover: $nav-button-background-2;
+
+$connect-border: #ebebed;
+
+$slide-subtitle-background: #f4f6f7;
+$slide-number-background: #2d322f;
+
+$slider-bullet: #979797;
+$slider-bullet-active: #5d625f;

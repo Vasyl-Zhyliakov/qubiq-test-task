@@ -1,0 +1,119 @@
+.nav {
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablet {
+    margin-bottom: 62px;
+    justify-content: start;
+  }
+
+  @include desktop {
+    padding: 0px 0 0px 11px;
+    margin-bottom: 64px;
+  }
+
+  @include large {
+    margin-bottom: 119px;
+  }
+
+  &__list {
+    display: none;
+    padding: 3px 5px 3px 3px;
+    background-color: $nav-background;
+    border: 1px solid $nav-border;
+    border-radius: 100px;
+    gap: 1px;
+
+    @include tablet {
+      display: flex;
+      padding: 3px;
+    }
+
+    @include desktop {
+      gap: 4px;
+    }
+  }
+
+  &__item {
+    padding: 9px;
+    border-radius: 100px;
+    transition: all ease 0.3s;
+    height: 31px;
+    box-sizing: border-box;
+
+    &:hover {
+      background: $nav-button-background-2;
+
+      & .nav__link {
+        color: $nav-button-color-2;
+      }
+    }
+
+    &:active {
+      background: $nav-button-background-3;
+
+      & .nav__link {
+        color: $nav-button-color-3;
+      }
+    }
+
+    @include desktop {
+      padding: 11px;
+      height: 38px;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-family: 'Konnect', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    text-decoration: none;
+    color: $nav-button-color-1;
+
+    @include desktop {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+  &__connect {
+    background-color: $nav-button-background-2;
+    font-family: 'Konnect', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    color: $nav-button-color-2;
+    border-radius: 100px;
+    padding: 9px 15px;
+    transition: all ease 0.5s;
+    border: none;
+    text-decoration: none;
+    display: none;
+    height: 31px;
+    box-sizing: border-box;
+
+    &:hover {
+      color: $nav-button-color-3;
+      background-color: $nav-button-background-3;
+    }
+
+    @include tablet {
+      display: block;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+  }
+}
