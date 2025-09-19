@@ -4,6 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import disconnectIcon from './images/icons/disconnect.svg';
 
 const buttonConnect = document.querySelector('.connect');
 
@@ -16,7 +17,7 @@ buttonConnect.addEventListener('click', () => {
     buttonConnect.innerHTML = `
       <span>0x233...ger</span>
       <span class="connect__icon-wrap">
-        <img src="./src/images/icons/disconnect.svg" alt="disconnect icon" class="connect__icon">
+        <img src=${disconnectIcon} alt="disconnect icon" class="connect__icon">
       </span>
     `;
   }
